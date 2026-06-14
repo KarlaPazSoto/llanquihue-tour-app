@@ -22,7 +22,7 @@ public class Main {
             System.out.println("1. Ver todos los tours");
             System.out.println("2. Filtrar tours");
             System.out.println("3. Salir");
-            System.out.print("Seleccione una opción");
+            System.out.print("Seleccione una opción ");
             opcion = sc.nextInt();
 
             switch (opcion) {
@@ -65,7 +65,7 @@ public class Main {
             System.out.println("2. Precio menor a 20000");
             System.out.println("3. Filtrar por lugar");
             System.out.println("4. Volver");
-            System.out.print("Seleccione");
+            System.out.print("Seleccione ");
             opcionFiltro = sc.nextInt();
 
             switch (opcionFiltro) {

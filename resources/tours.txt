@@ -1,0 +1,5 @@
+Tour Lagos;Llanquihue;25000
+Tour Volcán Osorno;Puerto Varas;30000
+Tour Isla Tenglo;Puerto Montt;18000
+Tour Bosque Nativo;Frutillar;16000
+Tour Navegación Fiordos;Calbuco;40000
