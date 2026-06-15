@@ -33,7 +33,7 @@ resources
 
 Clase que representa un tour turístico. Contiene los atributos, constructores, métodos getters, setters y el método `toString()`.
 
-### CargadorDatos
+### Datos
 
 Clase encargada de leer el archivo `tours.txt`, procesar cada línea mediante `split(";")`, crear objetos `Tour` y almacenarlos en un `ArrayList`.
 
