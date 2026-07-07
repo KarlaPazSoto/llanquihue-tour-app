@@ -1,6 +1,6 @@
 package model;
 
-public class ServicioTuristico {
+public abstract class ServicioTuristico {
 
     private String nombre;
     private int duracionHoras;
@@ -28,6 +28,8 @@ public class ServicioTuristico {
     public void setDuracionHoras(int duracionHoras) {
         this.duracionHoras = duracionHoras;
     }
+
+    public abstract void mostrarInformacion();
 
     @Override
     public String toString() {
