@@ -33,7 +33,7 @@ resources
 
 ### ServicioTuristico
 
-Clase base que representa un servicio turístico genérico. Contiene los atributos `nombre` y `duracionHoras`, junto con constructores, getters, setters y el método `toString()`.
+Clase base abstracta que representa un servicio turístico genérico. Contiene los atributos `nombre` y `duracionHoras`, junto con constructores, getters, setters, el método abstracto `mostrarInformacion()` y la implementación de `toString()` para la representación textual del servicio.
 
 ### ExcursionCultural
 
@@ -49,11 +49,11 @@ Subclase que extiende `ServicioTuristico`. Representa una ruta gastronómica y a
 
 ### GestorServicios
 
-Clase responsable de la creación de servicios turísticos. Implementa el método `crearServicios()` que instancia al menos dos objetos de cada subclase y los retorna en una lista para su gestión centralizada.
+Clase responsable de la gestión centralizada de servicios turísticos. Instancia dos objetos de cada subclase durante la inicialización y proporciona múltiples métodos para buscar, filtrar, agregar, eliminar y visualizar servicios. Incluye métodos especializados para obtener servicios por categoría: excursiones culturales, paseos lacustres y rutas gastronómicas.
 
 ### Main
 
-Clase principal del programa. Crea una instancia de `GestorServicios`, obtiene la lista de servicios creados y los muestra en consola utilizando el método `toString()`.
+Clase principal del programa. Inicializa una instancia de `GestorServicios` dentro de un bloque try-catch para el manejo de excepciones. Utiliza el método `mostrarTodosLosServicios()` para desplegar la información detallada de cada servicio y presenta un resumen estadístico por categoría de servicios turísticos.
 
 ---
 
@@ -75,15 +75,18 @@ Clase principal del programa. Crea una instancia de `GestorServicios`, obtiene l
 
 ## Funcionalidades implementadas
 
-- Herencia de clases con una clase base `ServicioTuristico`.
+- Herencia de clases con una clase base abstracta `ServicioTuristico`.
 - Creación de múltiples subclases especializadas.
-- Polimorfismo mediante el método `toString()` sobrescrito.
+- Polimorfismo mediante el método `mostrarInformacion()` sobrescrito en cada subclase.
 - Uso de constructores con parámetros en clases base y subclases.
 - Encapsulamiento mediante atributos privados.
 - Implementación de getters y setters para todos los atributos.
 - Gestión centralizada de objetos mediante una clase `GestorServicios`.
 - Almacenamiento de objetos en colecciones `ArrayList`.
 - Recorrido e iteración de colecciones.
+- Búsqueda y filtrado de servicios por tipo y nombre.
+- Manejo de excepciones en la clase principal para mayor robustez.
+- Visualización formatada y categorizada de servicios turísticos.
 
 ---
 
